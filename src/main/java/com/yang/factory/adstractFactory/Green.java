@@ -1,0 +1,9 @@
+package com.yang.factory.adstractFactory;
+
+public class Green implements Color {
+
+    @Override
+    public void fill() {
+        System.out.println("填充绿色");
+    }
+}
