@@ -41,7 +41,11 @@ class FlyCar extends SuperCar{
         System.out.println("在天上飞");
     }
 
-
+    @Override
+    public void move() {
+        super.move();
+        fly();
+    }
 }
 
 
@@ -53,7 +57,11 @@ class WaterCar extends SuperCar{
     public void swim(){
         System.out.println("在水里游");
     }
-
+    @Override
+    public void move() {
+        super.move();
+        swim();
+    }
 }
 
 
@@ -65,5 +73,9 @@ class AiCar extends SuperCar{
     public void ai(){
         System.out.println("自动驾驶");
     }
-
+    @Override
+    public void move() {
+        super.move();
+        ai();
+    }
 }

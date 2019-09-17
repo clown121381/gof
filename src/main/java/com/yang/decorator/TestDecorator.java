@@ -13,6 +13,11 @@ public class TestDecorator {
         fcar.fly();
         WaterCar waterCar = new WaterCar(fcar);
         waterCar.swim();
+
+        System.out.println("__________");
+        AiCar a = new AiCar(new WaterCar(new FlyCar(car)));
+        a.move();
+
     }
 
     public static void main(String[] args) {
